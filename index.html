@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Sablée | Pastelería Artesanal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <span>La Sablée</span>
+        <small>Pastelería artesanal</small>
+    </div>
+
+    <button class="carrito-btn" onclick="abrirCarrito()">
+        🛒 Carrito
+        <span id="contador">0</span>
+    </button>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     PRESENTACIÓN
+========================= -->
+
+<section class="presentacion">
+
+    <div>
+
+        <p class="subtitulo">
+            PASTELERÍA ARTESANAL
+        </p>
+
+        <h1>
+            Hecho con amor,<br>
+            pensado para compartir.
+        </h1>
+
+        <p class="descripcion">
+            Descubrí nuestras tartas artesanales y elegí
+            el tamaño perfecto para cada ocasión.
+        </p>
+
+        <a href="#tartas" class="boton">
+            Ver nuestras tartas
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TARTAS
+========================= -->
+
+<section id="tartas">
+
+    <div class="titulo-seccion">
+
+        <span>NUESTRA CARTA</span>
+
+        <h2>Elegí tu favorita</h2>
+
+        <p>
+            Tocá "Elegir" para seleccionar el diámetro.
+        </p>
+
+    </div>
+
+
+    <div class="grid-tartas">
+
+
+        <!-- TOFFEE -->
+
+        <article class="tarta">
+
+            <div class="imagen-tarta">
+
+                <img src="imagenes/toffee.jpg"
+                     alt="Tarta Toffee"
+                     onerror="this.src='https://media.losandes.com.ar/p/0cc55653456ab36d60cbdb9e99b9fad4/adjuntos/368/imagenes/100/625/0100625811/1200x675/smart/imagepng.png'">
+
+                <button onclick="mostrarOpciones('Toffee')">
+                    Elegir
+                </button>
+
+            </div>
+
+            <div class="info-tarta">
+
+                <h3>Tarta Toffee</h3>
+
+                <p>
+                    Base crocante, dulce de leche
+                    y una delicada cobertura de chocolate.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- LEMON PIE -->
+
+        <article class="tarta">
+
+            <div class="imagen-tarta">
+
+                <img src="imagenes/lemon-pie.jpg"
+                     alt="Lemon Pie"
+                     onerror="this.src='https://www.cronista.com/resizer/v2/U7QHPHRQFRCENHPVV7SXWLMVSM.jpg?auth=9a85bff473feb3f9ea77755cd9301b27ec3639ee447264ceb0d1d93d3a687383&height=449&width=800&quality=70&smart=true'">
+
+                <button onclick="mostrarOpciones('Lemon Pie')">
+                    Elegir
+                </button>
+
+            </div>
+
+            <div class="info-tarta">
+
+                <h3>Lemon Pie</h3>
+
+                <p>
+                    Cremoso relleno de limón
+                    y suave merengue.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARROT CAKE -->
+
+        <article class="tarta">
+
+            <div class="imagen-tarta">
+
+                <img src="imagenes/carrot-cake.jpg"
+                     alt="Tarta de Zanahoria"
+                     onerror="this.src='https://www.hola.com/horizon/landscape/a691cc4ac8dc-adobestock618018604.jpg?im=Resize=(640),type=downsize'">
+
+                <button onclick="mostrarOpciones('Tarta de Zanahoria')">
+                    Elegir
+                </button>
+
+            </div>
+
+            <div class="info-tarta">
+
+                <h3>Tarta de Zanahoria</h3>
+
+                <p>
+                    Bizcocho de zanahoria con
+                    una cremosa cobertura.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- MARQUISE -->
+
+        <article class="tarta">
+
+            <div class="imagen-tarta">
+
+                <img src="imagenes/marquise.jpg"
+                     alt="Marquise"
+                     onerror="this.src='https://www.abc.com.py/resizer/v2/MA7JWFS6EVEW7GXRMK62ALSYOI.jpg?auth=0864ac8a6b689bd173312e6b6a5951cdc5f1e07a7b7af121df9cfc908445dce8&width=910&height=590&smart=true'">
+
+                <button onclick="mostrarOpciones('Marquise')">
+                    Elegir
+                </button>
+
+            </div>
+
+            <div class="info-tarta">
+
+                <h3>Marquise</h3>
+
+                <p>
+                    Intensa base de chocolate
+                    y textura suave.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- FRUTILLAS -->
+
+        <article class="tarta">
+
+            <div class="imagen-tarta">
+
+                <img src="imagenes/frutillas.jpg"
+                     alt="Tarta de Frutillas"
+                     onerror="this.src='https://www.johaprato.com/files/styles/flexslider_full/public/tarta-de-frutillas2.png?itok=kqo9VG-5'">
+
+                <button onclick="mostrarOpciones('Tarta de Frutillas')">
+                    Elegir
+                </button>
+
+            </div>
+
+            <div class="info-tarta">
+
+                <h3>Tarta de Frutillas</h3>
+
+                <p>
+                    Crema suave, base crocante
+                    y frutillas frescas.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- CHEESECAKE -->
+
+        <article class="tarta">
+
+            <div class="imagen-tarta">
+
+                <img src="imagenes/cheesecake.jpg"
+                     alt="Cheesecake"
+                     onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nMveAldGg8kApBL8VvU2KdTVyNg1JVOfDON2fy2JNUcbinOt344mUOaS&s=10'">
+
+                <button onclick="mostrarOpciones('Cheesecake')">
+                    Elegir
+                </button>
+
+            </div>
+
+            <div class="info-tarta">
+
+                <h3>Cheesecake</h3>
+
+                <p>
+                    Cremoso cheesecake con
+                    una delicada base.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PEDIDO
+========================= -->
+
+<section id="pedido">
+
+    <div class="titulo-seccion">
+
+        <span>FINALIZAR PEDIDO</span>
+
+        <h2>¿Cómo querés recibirlo?</h2>
+
+    </div>
+
+
+    <div class="tipo-entrega">
+
+        <button class="entrega-activa"
+                onclick="seleccionarEntrega('local', this)">
+
+            🏪 Retiro en el local
+
+        </button>
+
+        <button onclick="seleccionarEntrega('domicilio', this)">
+
+            🚚 Envío a domicilio
+
+        </button>
+
+    </div>
+
+
+    <form id="formularioPedido">
+
+        <div class="campo">
+
+            <label>Nombre y Apellido</label>
+
+            <input type="text"
+                   id="nombre"
+                   placeholder="Ej. María González"
+                   required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label>Número de contacto</label>
+
+            <input type="tel"
+                   id="telefono"
+                   placeholder="Ej. 3764 123456"
+                   required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label>Día de retiro / entrega</label>
+
+            <input type="date"
+                   id="fecha"
+                   required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label>Horario</label>
+
+            <input type="time"
+                   id="hora"
+                   required>
+
+        </div>
+
+
+        <!-- DOMICILIO -->
+
+        <div id="datosDomicilio" class="domicilio oculto">
+
+            <div class="campo">
+
+                <label>Dirección</label>
+
+                <input type="text"
+                       id="direccion"
+                       placeholder="Buscá tu dirección en el mapa">
+
+            </div>
+
+
+            <div class="mapa-contenedor">
+
+                <div id="mapa"></div>
+
+            </div>
+
+            <p class="ayuda-mapa">
+                📍 Escribí tu dirección arriba y elegí una
+                de las sugerencias de Google Maps.
+            </p>
+
+        </div>
+
+
+        <div class="resumen-pedido">
+
+            <span>Total del pedido</span>
+
+            <strong id="totalPedido">
+                $0
+            </strong>
+
+        </div>
+
+
+        <button type="submit"
+                class="confirmar">
+
+            Confirmar pedido y continuar al pago
+
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     CARRITO
+========================= -->
+
+<div id="carrito" class="modal">
+
+    <div class="contenido-carrito">
+
+        <button class="cerrar"
+                onclick="cerrarCarrito()">
+            ×
+        </button>
+
+        <h2>Tu pedido</h2>
+
+        <div id="productosCarrito">
+
+            <p class="vacio">
+                Todavía no agregaste ninguna tarta.
+            </p>
+
+        </div>
+
+        <div class="total">
+
+            <span>Total</span>
+
+            <strong id="total">
+                $0
+            </strong>
+
+        </div>
+
+        <button class="boton"
+                onclick="irAlPedido()">
+
+            Continuar con el pedido
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SELECTOR DE TAMAÑO
+========================= -->
+
+<div id="selector" class="modal">
+
+    <div class="contenido-selector">
+
+        <button class="cerrar"
+                onclick="cerrarSelector()">
+            ×
+        </button>
+
+        <h2 id="tituloSelector">
+            Elegí el tamaño
+        </h2>
+
+        <p>
+            Seleccioná el diámetro:
+        </p>
+
+        <div class="tamanos">
+
+            <button onclick="agregarAlCarrito(12)">
+                <strong>Diámetro: 12 cm</strong>
+                <span id="precio12"></span>
+            </button>
+
+            <button onclick="agregarAlCarrito(20)">
+                <strong>Diámetro: 20 cm</strong>
+                <span id="precio20"></span>
+            </button>
+
+            <button onclick="agregarAlCarrito(26)">
+                <strong>Diámetro: 26 cm</strong>
+                <span id="precio26"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <h2>La Sablée</h2>
+
+    <p>Pastelería artesanal</p>
+
+    <p class="copyright">
+        © 2026 La Sablée
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<!--
+    IMPORTANTE:
+    Reemplazá TU_API_KEY por la API KEY
+    de Google Maps cuando quieras activar
+    el mapa interactivo.
+-->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=places&callback=inicializarMapa">
+</script>
+
+</body>
+</html>
